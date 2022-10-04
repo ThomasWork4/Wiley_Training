@@ -23,72 +23,72 @@ Connecting Intellij to GitHub and pushing work
 
 Variable Declaration
 --------------------------------------------------------------
-Var my_variable - Creates a mutable variable
-Val my_variable - Creates an immutable variable
-Best practice is to declare the data type so that Scala knows for sure what it's dealing with 
-E.g. Var my_variable:String = "Hello"
-This is a much safer practice
+Var my_variable - Creates a mutable variable <br />
+Val my_variable - Creates an immutable variable <br />
+Best practice is to declare the data type so that Scala knows for sure what it's dealing with <br />
+E.g. Var my_variable:String = "Hello" <br />
+This is a much safer practice <br />
 
 Tuples
 --------------------------------------------------------------
-Tuples store a number of values per element. For example:
-val tuple:(String, Int)=("Thomas", 22) 
-Creates a tuple containing a string and integer
-You can print indexes of tuples using tuplen._1  tuple._2 etc
+Tuples store a number of values per element. For example: <br />
+val tuple:(String, Int)=("Thomas", 22) <br />
+Creates a tuple containing a string and integer <br />
+You can print indexes of tuples using tuplen._1  tuple._2 etc <br />
 
 Data types in scala
 --------------------------------------------------------------
-String = ""
-Byte is 8 bits
-Short is 16 bits
-Char is 16 bits
-Int is 32 bits
-Long is 64 bits
-Float is 32 bits
-Double is 64 bits 
-Boolean is True or False
+String = ""<br />
+Byte is 8 bits<br /><br />
+Short is 16 bits<br />
+Char is 16 bits<br />
+Int is 32 bits<br />
+Long is 64 bits<br />
+Float is 32 bits<br />
+Double is 64 bits <br />
+Boolean is True or False<br />
 
 Pattern matching for the same data type 
 --------------------------------------------------------------
-You can use the keywords "match" and "case" to match a variable
-to a list of possible cases. Doing this typically means you can only 
-use one data type. 
+You can use the keywords "match" and "case" to match a variable<br />
+to a list of possible cases. Doing this typically means you can only <br />
+use one data type. <br />
 
 Pattern matching for different data types 
 --------------------------------------------------------------
-Similar to the process above however we use the Any keyword which
-allows us to search cases with multiple data types. This is best to 
-implement inside a function to keep the whole process automatec
+Similar to the process above however we use the Any keyword which<br />
+allows us to search cases with multiple data types. This is best to <br />
+implement inside a function to keep the whole process automatec<br />
 
 For loops
 --------------------------------------------------------------
-for(a <-1 to 5){} ------ Loops through 1 to 5 and includes the upper boundary
-for(a <-1 until 5){} ------- Loops through 1 to 5 and doesn't include the upper boundary
-for(a <- 1 to 10 if a%2==0 ----- For loop combined with an if statement
-var result = for(a<-1 to 10) yield a ------- Yield returns the result of the entire loop after it's completed not the result at every step
-for(i<-1 to 20 by 2){println(i)} -------- For loop where you can stipulate the size of each increment during each iteration
+for(a <-1 to 5){} ------ Loops through 1 to 5 and includes the upper boundary<br />
+for(a <-1 until 5){} ------- Loops through 1 to 5 and doesn't include the upper boundary<br />
+for(a <- 1 to 10 if a%2==0 ----- For loop combined with an if statement<br />
+var result = for(a<-1 to 10) yield a ------- Yield returns the result of the entire loop after it's completed not the result at every step<br />
+for(i<-1 to 20 by 2){println(i)} -------- For loop where you can stipulate the size of each increment during each iteration<br />
 
 While loops
 --------------------------------------------------------------
-While loops iterate until the termination criteria is met. 
-  var a = 10
-  while (a <= 20) {
-    println(a)
-    a = a + 2
-  }
-This prints the value of a at each iteration until it is bigger than 20
+While loops iterate until the termination criteria is met. <br />
+  var a = 10<br />
+  while (a <= 20) {<br />
+    println(a)<br />
+    a = a + 2<br />
+  }<br />
+This prints the value of a at each iteration until it is bigger than 20<br />
 
-It's possible to implement infinite loops, however there's typically no reason for this
+It's possible to implement infinite loops, however there's typically no reason for this<br />
 
 Control Structures
 --------------------------------------------------------------
-if statement --- Procs if the conditions of the if statement are met
-if else ---- Used when there are multiple criteria needed to be checked
-else ----- If all else fails, or if there are only two conditions to check
+if statement --- Procs if the conditions of the if statement are met<br />
+if else ---- Used when there are multiple criteria needed to be checked<br />
+else ----- If all else fails, or if there are only two conditions to check<br />
 
 Basic lists
 --------------------------------------------------------------
- var listOfNumbers = List(1, 2, 3, 4, 5)
+ var listOfNumbers = List(1, 2, 3, 4, 5)<br />
  There are three ways to print the content of a list
  1.   listOfNumbers.foreach(print)
  2.   listOfNumbers.foreach(println)
