@@ -33,10 +33,8 @@ object ForLoops extends App{
   }
 
 
-  // another for loop where you can stiplate the size the
+  // another for loop where you can stipulate the size the
   // the increments at each iteration
-  for(i<-1 to 20 by 2){
-    println(i)
-  }
+  for(i<-1 to 20 by 2){println(i)}
 
 }
