@@ -16,8 +16,6 @@ This description was sourced from GeeksforGeeks
 A singleton object is an object that is declared by an object instead of a class.
 It's used when you need exactly one instance of an object
 It's also used to expose some globally accessible functions or methods
-At first glance, it looks more like instead of creating a class to make an object
-You are just creating a single object instance manually
 Singleton objects are instantiated only once therefore its state IS SAVED and it's
 attributes are never re-initialized
 If you ran the Singletonobject.hello() command multiple times, it would print

@@ -2,7 +2,7 @@ package com.wiley.LazyEvaluation
 
 object LazyEvaluation extends App{
   //Lazy evaluation is also called "Call-by-need"
-  //The lazy expression, in this case line 6
+  //The lazy expression, in this case line 10
   //Won't be evaluated until it's first use
 
   //Simplest example I can give
