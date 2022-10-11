@@ -1,4 +1,4 @@
-package com.wiley.scalacohort.training
+package com.wiley.scalacohort.Tuples
 
 object Tuples extends App{
   //One implementation

@@ -1,6 +1,12 @@
 package com.wiley.finalKeyword
 
-class Animal {
+//Final variables - Cannot be overriden in child classes
+//Final method - cannot be overriden in child classes
+//Final class - cannot be inherited or extended by any class
+
+
+//Final can be used on a class to make it un-extendable as well.
+final class Animal {
   //Using the final keyword makes a variable completely immmutable
   //and you cannot override it
   final val NumberofLegs:Int=4
@@ -13,8 +19,8 @@ class Animal {
 
 //UNCOMMENT BELOW
 //class Ostrich extends Animal {
-  //These do not work when final keyword is used
-  //Whereas they both work in fieldOverriding where the final keyword is not used
+//  These do not work when final keyword is used
+//  Whereas they both work in fieldOverriding where the final keyword is not used
 //UNCOMMENT BELOW
 //  override val NumberofLegs:Int = 2
 //
