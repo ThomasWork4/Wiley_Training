@@ -4,5 +4,5 @@ The goal of this project was to create a basic banking system, with extensive fu
 
 Current Structure 
 --------------------------------------------------------------
-![Alt text](ClassHierarchy.png "Optional title")
+![Alt text](ClassHierarchy.PNG "Optional title")
 
