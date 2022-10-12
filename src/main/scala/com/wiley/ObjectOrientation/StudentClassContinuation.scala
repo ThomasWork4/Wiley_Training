@@ -1,7 +1,5 @@
 package com.wiley.ObjectOrientation
 
-
-
 object StudentClassContinuation extends App {
   // Instantiating a parameterized object
 var s=new Student(100, "Abc")

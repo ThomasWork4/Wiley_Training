@@ -1,6 +1,5 @@
 package com.wiley.SyllabusInPractice
 
-
 trait Poodle {
   final val LegNumber:Int = 4
   val CurlyFur:Boolean = true

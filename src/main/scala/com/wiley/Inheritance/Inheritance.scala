@@ -1,6 +1,5 @@
 package com.wiley.Inheritance
 
-
 class Animal(var NumberOfLegs:Int = 0, var AnimalName:String = "None"){
 
   def setLegs(Value:Int):Unit={

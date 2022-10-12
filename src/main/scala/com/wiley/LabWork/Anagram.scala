@@ -1,6 +1,5 @@
 package com.wiley.LabWork
 
-
 object Anagram extends App{
 
   println(AnagramChecker("oom", "tom"))

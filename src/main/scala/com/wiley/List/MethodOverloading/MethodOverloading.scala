@@ -1,4 +1,4 @@
-package com.wiley.MethodOverloading
+package com.wiley.List.MethodOverloading
 
 class MethodOverloading {
   //Method overloading

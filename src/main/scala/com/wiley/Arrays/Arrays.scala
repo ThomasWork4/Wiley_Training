@@ -1,6 +1,5 @@
 package com.wiley.Arrays
 
-
 object Arrays extends App{
   //One way to create an array
   var arr=Array(1,2,3,4,5,6,7)

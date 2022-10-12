@@ -1,6 +1,5 @@
 package com.wiley.stringManipulation
 
-
 object stringFunctions extends App {
 
   var s1 = "Thomas "
