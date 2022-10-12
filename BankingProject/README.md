@@ -19,6 +19,7 @@ Functionality provided
 - Funds can be deposited to a selected accounts 
 - Funds can be withdrawn from selected accounts (Includes exception handling for withdrawing too many funds)
 - Funds can be transfered from one account to another
+NOTE all code has been commented with a brief statement regarding it's use case in the program
 
 Scala Topics Covered
 --------------------------------------------------------------
@@ -44,3 +45,10 @@ Scala Topics Covered
 
 Improvements to be made
 --------------------------------------------------------------
+- Complete the payCreditCard function inside CreditCard class
+- Currently, the program is extremely breakable. Every stage needs use validation, and can easily be broken with the incorrect input
+- User actions need to be validated for more security, currently the user can deposit however much money they want with no proof
+- Users can open multiple accounts of the same type, this should not be possible and needs to be addressed (This is also the same for credit cards)
+- Some code is very inefficient and need optimization. This makes for an underwhelming time complexity for most tasks
+- Account saving is fairly buggy and needs optimization (Multiple same name accounts can be created, unused accounts are not deleted from the CSV when reinstansiated, etc)
+- Classes and bunched together inside the same .scala script, they need to be seperated out for more readability
