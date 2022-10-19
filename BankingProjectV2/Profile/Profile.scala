@@ -7,24 +7,11 @@ import BankingProjectV2.Exceptions.TooManyAccountExceptions
 import scala.collection.mutable.ListBuffer
 import scala.util.control.Breaks.{break, breakable}
 
-
-//Main class used for the majority of user navigation
-//And processes that aren't account specific
-//This is where the user can see what he currently has
-//Or add to his portfolio through new accounts
 class Profile(ID:Any){
-  //Each account automatically gets a current account
-  //Which is added to innerAccounts, which is basically
-  //a list of all the accounts owned by the customer
   var accountPortfolio = new ListBuffer[Account]()
   var currentAccount = new CurrentAccount("Current Account")
-  //var creditAccount = new CreditAccount("Credit Account")
-  //Add current account to our portfolio
   accountPortfolio += currentAccount
 
-
-  //Called inside the front end object when a user has logged in
-  //and their previous account settings need to be restored
   def LoadPreviousSession(DataSplit:Array[String]):Unit = {
     if(DataSplit.contains("Current Account")){
       var index = DataSplit.indexOf("Current Account")
@@ -70,14 +57,10 @@ class Profile(ID:Any){
   }
 
   @throws(classOf[TooManyAccountExceptions])
-  //Function responsible for opening a new account
   def openAccount(): Unit = {
-    //Different account options
     println("What type of account would you like to open?\n1.Savings\n2.Credit\n3.Lifetime ISA")
     var accountType = scala.io.StdIn.readInt()
-    //Pattern matching to validate the user's input
     accountType match {
-      //Create a new savings account with the default settings and add it to the account portfolio
       case 1 => if(!tooManyAccountsCheck("Savings Account")){
         var sAccount = new SavingsAccount("Savings Account")
         accountPortfolio += sAccount
@@ -86,7 +69,6 @@ class Profile(ID:Any){
         var cAccount = new CreditAccount("Credit Account", true)
         accountPortfolio += cAccount
         println("A new credit account has been created\n")}
-      //Create a new help to buy ISA account with the default settings and add it to the account portfolio
       case 3 => if(!tooManyAccountsCheck("Help to buy ISA")){
         var IAccount = new HelpToBuyISA("Help to buy ISA")
         accountPortfolio += IAccount
@@ -94,8 +76,6 @@ class Profile(ID:Any){
     }
   }
 
-  //Function used to show the details of a specific account as opposed to all owned
-  //This includes account type and current balance
   def showAccountDetails(): Unit = {
     var selected_account:Int = accountSelection()
     if(accountPortfolio(selected_account).AccountType != "Credit Account"){
@@ -125,8 +105,6 @@ class Profile(ID:Any){
     true
   }
 
-  //This function was created for every instance where the user might need to choose
-  //From their account portfolio, it's mostly to promote code re-usability
   def accountSelection():Int = {
     println("Which account would you like to select?: ")
     //For loop that prints the accounts owned in a numbered format
@@ -142,35 +120,25 @@ class Profile(ID:Any){
     }
   }
 
-  //Function called when the user wants to invoke a specific action
-  //with a specified account. It's mainly for presenting their options
   def accountOptions():Unit = {
     var selected_account = accountSelection()
-    //If the account selected is a Credit account, we need to display the extra option it has
     if(accountPortfolio(selected_account).AccountType == "Credit Account"){
       println("Your account options are:\n1. Withdraw from a credit card\n2. Deposit\n3. Transfer\n4. Order a new credit card\n5. Show current credit cards\n6. Pay off a credit card")
     }
-    //Otherwise just print the normal menu for all the basic accounts
     else {
       println("Your account options are:\n1. Withdraw\n2. Deposit\n3. Transfer")
     }
     var accountOptionChosen = scala.io.StdIn.readInt()
-    //Pattern matching that calls the functions based on the user input
     accountOptionChosen match {
-      //For withdrawing money
       case 1 => if(accountPortfolio(selected_account).AccountType == "Credit Account"){
         accountPortfolio(selected_account).withdrawFromCreditCards()
       }
       else{
         accountPortfolio(selected_account).withdrawMoney()
       }
-      //For depositing money
       case 2 => accountPortfolio(selected_account).depositMoney()
-      //For transferring money from the selected account to a destination account
       case 3 => transferMoney(accountPortfolio(selected_account))
-      //For ordering a new credit card
       case 4 => accountPortfolio(selected_account).orderNewCreditCard()
-      //For showing the credit cards currently owned by the user
       case 5 => accountPortfolio(selected_account).showCurrentCards()
       case 6 => println("Which credit card would you like to pay off? ")
         if (accountPortfolio(selected_account).creditCards.nonEmpty) {
@@ -185,22 +153,13 @@ class Profile(ID:Any){
     }
   }
 
-  //Function responsible for transferring money between user accounts
-  //This was intended to be extended to transfer money between external accounts
-  //How this was not completed
   def transferMoney(current_selected_account:Account): Unit = {
-    //Choose the destination account
     println("Which account would you like to transfer money to? ")
     for ((account, index) <- accountPortfolio.zipWithIndex) print((index + 1) + ". " + account.AccountType + "\n")
     var selection = scala.io.StdIn.readInt() - 1
-    //If the destination account isn't the one currently selected
-    //Note making sure to decrement menu option as we are dealing with indexes starting from zero
     if (accountPortfolio(selection).AccountType != current_selected_account.AccountType) {
       println("How much would you like to transfer?")
       var transferalAmount = scala.io.StdIn.readDouble()
-      //If the user has enough funds in the account to transfer
-      //Deduct from the source account
-      //And increase the balance of the destination account
       if (transferalAmount < current_selected_account.AccountBalance) {
         current_selected_account.AccountBalance -= transferalAmount
         accountPortfolio(selection).AccountBalance += transferalAmount
@@ -211,7 +170,6 @@ class Profile(ID:Any){
 
     }
     else {
-      //In case the user picked the source account as the destination account for the transferal
       println("Please pick an account other than the current selected one")
       transferMoney(current_selected_account)
     }

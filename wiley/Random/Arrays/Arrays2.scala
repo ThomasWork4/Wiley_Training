@@ -1,4 +1,4 @@
-package com.wiley.Arrays
+package com.wiley.Random.Arrays
 
 class Arrays2 {
   var arr = new Array[Float](5)

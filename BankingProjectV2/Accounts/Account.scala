@@ -9,7 +9,7 @@ import scala.collection.mutable.ListBuffer
 //unique bank accounts (Savings, Credit, etc)
 //Each account has a balance and monetary functions
 abstract class Account(val AccountType:String = ""){
-  var AccountBalance: Double = 0.0
+  var AccountBalance: Double = 0.00
   var creditCards = new ListBuffer[CreditCard]()
 
   //Function for depositing money into an account

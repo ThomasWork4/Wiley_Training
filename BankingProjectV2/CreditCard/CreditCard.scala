@@ -4,10 +4,7 @@ import BankingProjectV2.Accounts.{Account, CreditAccount}
 
 import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 
-//Class created to create credit card objects
-//Has multiple default attributes
 class CreditCard(var ccBalance:Double = 0.0,var cardType:String = "",var creditLimit:Double = 0.0,var interestRate:Int = 0){
-  //Unfinished method used to pay back credit card debt
 
 
   def payCreditCard(accountPortfolio:ListBuffer[Account], cAccount: Account):Unit = {

@@ -1,4 +1,4 @@
-package com.wiley.Arrays
+package com.wiley.Random.Arrays
 
 object Arrays extends App{
   //One way to create an array
