@@ -2,9 +2,26 @@ Banking Project
 --------------------------------------------------------------
 The goal of this project was to create a basic banking system, with extensive functionality, whilst attempting to cover as many as the Scala training topics as possible. 
 
-Current Structure 
+Prerequisites Required Before Running
+--------------------------------------------------------------
+- An active mySQL server must be installed and running on the local machine before attempting to run the program
+- All three classes inside the SQL_Account_Storage directory must be updated so that the username and passwords match the credentials of your mySQL connection
+- ^ Please see the TODO lines on each of the classes
+- A new accountStorage table must be created inside an accountStorage database with the correct field names
+- ^ Copy and paste the text file inside SQL_Account_Storage into your mySQL workbench
+
+How To Run
+--------------------------------------------------------------
+- Program starts from the login object, please run from here
+- Ensure that you safe exit using the corresponding menu options, terminating the program via Intellij will cause any account updates not to be saved to mySQL
+- Always ensure that the corresponding number keys are used to navigate all menus unless indicated otherwise
+
+Simplified Class Hierarchy 
 --------------------------------------------------------------
 ![Alt text](ClassHierarchy.PNG "Optional title")
+
+Project Structure
+--------------------------------------------------------------
 
 Functionality provided
 --------------------------------------------------------------
