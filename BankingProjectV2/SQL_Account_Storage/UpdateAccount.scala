@@ -5,9 +5,15 @@ import scala.collection.mutable.ListBuffer
 import BankingProjectV2.SQL_Account_Storage.DoesAccountExist
 
 class UpdateAccount {
+  //Function responsible for either updating an already existing account in the database
+  //Or creating a new instance of the account in the databse if it doesn't already exists
+  //It accepts all the lists we previously made storing all the information about an account before the program was exited
   def update(DataStrings:ListBuffer[String], DataInt:ListBuffer[Int], DataFloats:ListBuffer[Double], DataBoolean:ListBuffer[Boolean], currentUsername:String, currentPassword:String):Unit = {
     val driver = "com.mysql.cj.jdbc.Driver"
+    //URL for the accountStorage database
     val url = "jdbc:mysql://localhost:3306/accountStorage"
+    //Username and password for mySQL server
+    //TODO these need to change when testing the program from a different desktop
     val username = "root"
     val password = "alphamale123"
 
@@ -15,11 +21,16 @@ class UpdateAccount {
     var connection: Connection = null
     try {
       Class.forName(driver)
+      //Test the connection using the current username, password
       connection = DriverManager.getConnection(url, username, password)
+      //If the account exists already, it means we need to UPDATE the stored data
+      //Not submit new ones
       var Checker = new DoesAccountExist
       if (Checker.Check(currentUsername, currentPassword)) {
+        //SQL statement for updating all column fields
         val updateStatement = "UPDATE accountStorage SET CurrentAccountBalance = ?,CreditAccount = ?,BasicCreditCard = ?,BasicCreditCardBalance = ?,BasicCreditCardType = ?,BasicCreditCardLimit = ?,BasicCreditCardIR = ?,RewardsCreditCard = ?,RewardsCreditCardBalance = ?,RewardsCreditCardType = ?,RewardsCreditCardLimit = ?,RewardsCreditCardIR = ?,BalanceTransferCard = ?,BalanceTransferCardBalance = ?,BalanceTransferCardType = ?,BalanceTransferCardLimit = ?,BalanceTransferCardIR = ?,SavingsAccount = ?,SavingsAccountBalance = ?,ISA = ?,ISABalance = ? WHERE Username = ? AND Password = ?"
         var preparedStatement: PreparedStatement = connection.prepareStatement(updateStatement)
+        //Set each of the 23 different column fields to whatever the saved values are
         preparedStatement.setDouble(1, DataFloats.head)
         preparedStatement.setBoolean(2, DataBoolean.head)
         preparedStatement.setBoolean(3, DataBoolean(1))
@@ -43,11 +54,16 @@ class UpdateAccount {
         preparedStatement.setDouble(21, DataFloats(8))
         preparedStatement.setString(22, currentUsername)
         preparedStatement.setString(23, currentPassword)
+        //execute the SQL statement
         preparedStatement.execute()
       }
+        //If the account doesn't exist in the database, then this is the first time a user has logged in and we need to make a new instance
+        //in the database for that account
       else {
+        //SQL statement for inserting a new entry into the table
         val insertstatement = "INSERT INTO accountStorage (Username,Password,ID,CurrentAccountBalance,CreditAccount,BasicCreditCard,BasicCreditCardBalance,BasicCreditCardType,BasicCreditCardLimit,BasicCreditCardIR,RewardsCreditCard,RewardsCreditCardBalance,RewardsCreditCardType,RewardsCreditCardLimit,RewardsCreditCardIR,BalanceTransferCard,BalanceTransferCardBalance,BalanceTransferCardType,BalanceTransferCardLimit,BalanceTransferCardIR,SavingsAccount,SavingsAccountBalance,ISA,ISABalance) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
         var preparedStatement: PreparedStatement = connection.prepareStatement(insertstatement)
+        //Set each of the 23 different column fields to whatever the saved values are
         preparedStatement.setString(1, DataStrings.head)
         preparedStatement.setString(2, DataStrings(1))
         preparedStatement.setString(3, DataStrings(2))
@@ -72,13 +88,16 @@ class UpdateAccount {
         preparedStatement.setDouble(22, DataFloats(7))
         preparedStatement.setBoolean(23, DataBoolean(5))
         preparedStatement.setDouble(24, DataFloats(8))
+        //execute the SQL statement
         preparedStatement.execute()
       }
     }
+      //Catch all exceptions that may source from the SQL connection
     catch {
       case e: Exception => e.printStackTrace()
     }
     finally {
+      //Close the connection before displaying the exception and terminating the program
       connection.close()
     }
   }

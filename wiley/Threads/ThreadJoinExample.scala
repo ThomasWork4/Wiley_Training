@@ -36,7 +36,6 @@ object MainObject extends App {
   }catch{
     case e:Exception=> e.printStackTrace()
   }
-
   t2.start()
   try{
     println("the current thread name is "+Thread.currentThread().getName)
@@ -44,7 +43,6 @@ object MainObject extends App {
   }catch{
     case e:Exception=> e.printStackTrace()
   }
-
   t3.start()
 
 
