@@ -6,7 +6,7 @@ Prerequisites Required Before Running
 --------------------------------------------------------------
 - An active mySQL server must be installed and running on the local machine before attempting to run the program
 - All three classes inside the SQL_Account_Storage directory must be updated so that the username and passwords match the credentials of your mySQL connection. Please see the TODO lines on each of the classes
-- A new accountStorage table must be created inside an accountStorage database with the correct field names. Copy and paste the text file inside SQL_Account_Storage into your mySQL workbench
+- A new accountStorage table must be created inside an accountStorage database with the correct field names. Copy and paste the text file inside SQL_Account_Storage into your mySQL workbench to do this.
 
 How To Run
 --------------------------------------------------------------
