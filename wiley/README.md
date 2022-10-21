@@ -172,15 +172,15 @@ MultiDimensionalArrays
 ------------------------------
 - This package contains an implementation of multi dimensional arrays and how they can be manipulated
 
-[AdditionOFMDArrays.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/AdditionOfMDArrays.scala) - This program creates two multidimensional arrays and adds them together essentially using matrix addition. 
-[MultiDimensionalArrays.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/MultiDimensionalArrays.scala) - This program shows multiple syntaxes for creating multidimensional arrays. It also demonstrates how to iterate and partition them as required.
-[StringInterpolation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/StringInterpolation.scala) - This program shows  a very brief example of how to format a string using the different formatting options. 
+[AdditionOFMDArrays.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/AdditionOfMDArrays.scala) - This program creates two multidimensional arrays and adds them together essentially using matrix addition. <br />
+[MultiDimensionalArrays.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/MultiDimensionalArrays.scala) - This program shows multiple syntaxes for creating multidimensional arrays. It also demonstrates how to iterate and partition them as required.<br />
+[StringInterpolation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/StringInterpolation.scala) - This program shows  a very brief example of how to format a string using the different formatting options. <br />
 
 ObjectOrientation 
 ------------------------------
 - This package contains the first programs written as part of the OOP part of training regarding the syntax of classes and how they are used.
 
-[StudentClass.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/ObjectOrientation/StudentClass.scala) - This program demonstrates a student simple student class with multiple attributes and methods. We demonstrate in the main thread how to instantiate classes and call class methods. 
+[StudentClass.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/ObjectOrientation/StudentClass.scala) - This program demonstrates a student simple student class with multiple attributes and methods. We demonstrate in the main thread how to instantiate classes and call class methods. <br />
 [StudentClassContinuation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/ObjectOrientation/StudentClassContinuation.scala) - This program is a continuation of the previous class experimenting with the basic concept of object orientation. 
 
 Operators 
@@ -193,21 +193,21 @@ Options
 ------------------------------
 - This package contains implementations for the Option container in scala and what it's different use cases are.
 
-[Example.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Options/Example.scala) - Fairly complex progfram that accesses a map and attempts to retrieve from the option container returned. Corresponding messages are provided to the user regarding whether the option is empty or not. 
+[Example.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Options/Example.scala) - Fairly complex progfram that accesses a map and attempts to retrieve from the option container returned. Corresponding messages are provided to the user regarding whether the option is empty or not. <br />
 [Student.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Options/Student.scala) - Similar to Example.scala, follows a map implementation an attempts to retrieve from the map and execute pattern matching cases based on the contents of each option. 
 
 Package
 ------------------------------
 - This package contains examples of how to import from other packages contained inside your intellij project
 
-[PackageTrial.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Package/PackageTrial.scala) - This program demonstrates the syntax for importing from an alternative class or object and executing whatever is provided inside.
+[PackageTrial.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Package/PackageTrial.scala) - This program demonstrates the syntax for importing from an alternative class or object and executing whatever is provided inside.<br />
 [PracticePackage.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Package/PracticePackage.scala) - A continuation of PackageTrial.scala with a different example.
 
 Regex 
 ------------------------------
 - This package contains example implementations of all the different regex casesi nside scala. Note that Digits.scala contains a link which has a table containing all the different regex cases and what they can be used for 
 
-[Digits.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Regex/Digits.scala) - This program highlights the syntax for each for each of the regex use cases. These have been taken directly off the tutorialspoint website and print with a short explanation on why that particular regex has returned what it did. 
+[Digits.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Regex/Digits.scala) - This program highlights the syntax for each for each of the regex use cases. These have been taken directly off the tutorialspoint website and print with a short explanation on why that particular regex has returned what it did. <br />
 [Regex.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Regex/Regex.scala) - First program executed when practicing regex in training. This program covers functions such as replaceAll, replaceFirst, findFirstIn, findAllIn, findAllMatchIn. Note that these mostly cover strings. Digits.scala covers everything and is a better representation of the idea of regex.
 
 ScalaLogging
@@ -220,7 +220,7 @@ SingletonAndCompanion
 ------------------------------
 - This package contains an implementation of the companion object as well as the singelton object
 
-[CompanionObject.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/SingletonAndCompanion/CompanionObject.scala) - This program demonstrates the syntax for the companion object. It is an object declared in the same file as a class and has the same name as the class. Companion objects typically don't have a reference. 
+[CompanionObject.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/SingletonAndCompanion/CompanionObject.scala) - This program demonstrates the syntax for the companion object. It is an object declared in the same file as a class and has the same name as the class. Companion objects typically don't have a reference. <br />
 [Singleton.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/SingletonAndCompanion/Singleton.scala) - This program demonstrates the syntax for the singleton object. Singleton object is an object that is declared by an object instead of a class. It's also used to expose some globally accessible functions or methods. Singleton objects are instantiated only once therefore its state IS SAVED and it's attributes are never re-initialized
 
 Stream 
@@ -233,12 +233,12 @@ Threads
 ------------------------------
 - This package contains many different implementations for the thread mechanism. Threads are flows of execution inside Scala at runtime. A program with multiple threads, can be running multiple different processes at the same time. 
 
-[DateTheadUsingSleep.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/DateThreadUsingSleep.scala) - This program demonstrates the syntax of a thread, how to declare it, and how to sleep it for a certain amount of time. 
-[FirstThreadClass.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/FirstThreadClass.scala) - This program is an example of how we can instantiate multiple threads at the same time and run start them all working in parallel. 
-[Implicit.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/Implicit.scala) - This program demonstrates implicits variables which are variables that can be used as a default value for functions that accept implicit integers when no parameter has been passed at Calltime.
-[MoreThreadPractice.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/MoreThreadPractice.scala) - This program explores the setPriority functions and how they can affect the way in which a threat executes. Note that the higher the value passed to the function, the higher the priority the thread has. 
-[Synchronized.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/Synchronized.scala) = This program explores the sychronized keyword with regards to threads.
-[ThreadJoinExample.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/ThreadJoinExample.scala) - This program explores the join keywork with threads. Join stops a thread from executing until the current one is finished executing. In this particular example join completely changes the way the threads print to the console, they wait for eachother, one after another. 
+[DateTheadUsingSleep.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/DateThreadUsingSleep.scala) - This program demonstrates the syntax of a thread, how to declare it, and how to sleep it for a certain amount of time. <br />
+[FirstThreadClass.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/FirstThreadClass.scala) - This program is an example of how we can instantiate multiple threads at the same time and run start them all working in parallel. <br />
+[Implicit.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/Implicit.scala) - This program demonstrates implicits variables which are variables that can be used as a default value for functions that accept implicit integers when no parameter has been passed at Calltime.<br />
+[MoreThreadPractice.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/MoreThreadPractice.scala) - This program explores the setPriority functions and how they can affect the way in which a threat executes. Note that the higher the value passed to the function, the higher the priority the thread has. <br />
+[Synchronized.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/Synchronized.scala) = This program explores the sychronized keyword with regards to threads.<br />
+[ThreadJoinExample.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/ThreadJoinExample.scala) - This program explores the join keywork with threads. Join stops a thread from executing until the current one is finished executing. In this particular example join completely changes the way the threads print to the console, they wait for eachother, one after another. <br />
 [ThreadUtility.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/ThreadUtility.scala) - This program explores the use of daemon threads which are low-priority threads that run in the background of scala to perform tasks such as garbage collection. 
 
 TypeHierarchy 
@@ -276,9 +276,9 @@ controlStructures
 ------------------------------
 - This package contains implementations for the different types of control structures inside Scala
 
-[ControlStructures.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/ControlStructures.scala) - This program demonstrates the syntax for if statements and how they can be used in Scala.
-[ForLoops.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/ForLoops.scala) - This program demonstrates the syntax for for loops and how they can be used to control collections of data. Most of these examples cover ranges, however this is expanded upon in other packages.
-[LoopsContinuous.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/LoopsContinuous.scala) - This program explores the usability of infinite loops, although this is not often implemented without a termimation criteria. 
+[ControlStructures.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/ControlStructures.scala) - This program demonstrates the syntax for if statements and how they can be used in Scala.<br />
+[ForLoops.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/ForLoops.scala) - This program demonstrates the syntax for for loops and how they can be used to control collections of data. Most of these examples cover ranges, however this is expanded upon in other packages.<br />
+[LoopsContinuous.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/LoopsContinuous.scala) - This program explores the usability of infinite loops, although this is not often implemented without a termimation criteria. <br />
 [WhileLoops.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/WhileLoops.scala) - This program demostrates the syntax for while loop and how they are fairly similar to for loops but only stop when a particular criteria is met.
 
 fieldOveriding
@@ -298,7 +298,7 @@ mixTraits
 ------------------------------
 - This package contains an implementation of mix traits that can be mixed with abstract classes using the with keyword
 
-[mixTraits.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/MixTypes.scala) - This program demonstrats the use cases of mixing traits with abstract classes when being inherited. 
+[mixTraits.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/MixTypes.scala) - This program demonstrats the use cases of mixing traits with abstract classes when being inherited. <br />
 [mixTraitsPractice.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/PatternMatching.scala) - This program is a continuation of mixTraits.scala. 
 
 
@@ -306,7 +306,7 @@ patternMatching
 ------------------------------
 - This package contains example implementations for the pattern matching mechanism 
 
-[MixTypes.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/MixTypes.scala) - This program demonstrates the pattern matching syntax and how it can be used as an alternative to if statements.
+[MixTypes.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/MixTypes.scala) - This program demonstrates the pattern matching syntax and how it can be used as an alternative to if statements.<br />
 [PatternMatching.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/PatternMatching.scala) - This program is a continuation of MixTypes.scala. 
 
 Tuples 
@@ -319,8 +319,8 @@ stringManipulation
 ------------------------------
 - This package contains the different implementations for manipulating strings in Scala. 
 
-[compareTo.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/compareTo.scala) - This program demonstrates the usability of the compareTo function. A further description of how this function is contained within the documentation of the program. 
-[stringFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/stringFunctions.scala) - This program highlights the substring and concatenation functions, each of which with their own advantages for indexing strings and transforming them.
+[compareTo.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/compareTo.scala) - This program demonstrates the usability of the compareTo function. A further description of how this function is contained within the documentation of the program. <br />
+[stringFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/stringFunctions.scala) - This program highlights the substring and concatenation functions, each of which with their own advantages for indexing strings and transforming them.<br />
 [stringManipulation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/stringManipulation.scala) - This program highlights the difference between == and .equals(). Furthermore it discusses the computational differences between using the plus symbol to concatenate strings, and the concatentation function itself.
 
 traits 
