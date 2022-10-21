@@ -93,5 +93,45 @@ Enumeration
 
 Exceptions 
 -----------------------
+- This package contains example implementations of exceptions and custom exceptions 
+- Exceptions are logical errors in the code that stop the flow of execution 
+- Checked exceptions are triggered at compile time 
+- Unchecked exception are triggered at runtime
 
+[CreaingExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/CreatingExceptions.scala) - Custom exception for validating an integer is greater than 18. If not, the custom exception will be thrown, handled and printed to the console. 
+[MoreCustomExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreCustomExceptions.scala) - Another custom exception to validate whether the user has enough funds to purchase an item as well as a custom exception to check whether an input value is a digit or not. 
+[MoreHandling.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreHandling.scala) - An example of the try catch block in combination with throwing exceptions. In this example, we are trying to access the 10th index of an array of size 2. 
+[MoreThrows.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreThrows.scala) - Another implementation of the try catch block in combination with implicitly throwing an exception under certain circumstances
+[ThrowingExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/ThrowingExceptions.scala) - First program made in this package showing the syntax for throwing an exception implicitly
+[TryCatchFinally.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/TryCatchFinally.scala) - An implemention of the try catch finally mechanism. The logic here is the same as MoreHandling.scala 
+
+FileManipulation
+--------------------------
+- This package contains example implementations of reading and writing to a text file
+
+[ReadingFromFile.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/FileManipulation/ReadingFromFile.scala) - Reads from a text file and prints the result in array for seperated by commas.
+[WritingToFile.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/FileManipulation/WritingToFile.scala) - Writes multiple lines to a text file
+
+Functions 
+---------------------------
+- This package contains example implementations of functions in Scala 
+- Given that Scala is massively functionally driven, these program were the cornerstone to my early understanding of the langauge
+
+[DefaultValueFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/DefaultValueFunctions.scala) - Displays the syntax for writing a function with default values in the case where no parameters are passed at calltime. 
+[Recursion.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/Recursion.scala) - Recursive function (function that calls itself). This recursive function can be used to find the factorial of a number. 
+[ScalaFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/ScalaFunctions.scala) - One of the first programs written in training designed to demonstrate the syntax of a regular function
+
+
+Higher Order Functions 
+------------------------------
+- This package contains example implementations of the different higher order functions 
+
+[AnonymousFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/AnonymousFunctions.scala) - Implementation of anonymous functions where functions are essentially written as variables. This program defines an addition AF. It implemented in different ways with varied datatypes. 
+[Composition.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/Composition.scala) - Implementation of composition where functions are stacked and executed on after an other dependent on the order of the stack.
+[CuryingFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/CuryingFunctions.scala) - Implementation of currying which is essentially the process of converting a function with multiple arguments into a sequence of functions that take a single argument.
+[HigherOrderFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/HigherOrderFunctions.scala) - Implementations of functions that accept other functions as a parameter input. 
+[MultiLineExpressions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/MultiLineExpressions.scala) - Implementation of multi line expressions where the last return clause is executed instead of the first because code is interpreted by the JVM from top to bottom.
+[NestedFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/NestedFunctions.scala) - Implementation of nested functions where functions are called inside another function
+[SupplementaryObject.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/SupplementaryObject.scala) - This can be ignored, this was merely a supplentary object for other programs to call upon should they need it. 
+[VariableLengthParameters.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/VariableLengthParameters.scala) - Implementation of functions that can accept varialbe length parameters using key symbols like * or collections of data.
 
