@@ -18,23 +18,25 @@ Simplified Class Hierarchy
 --------------------------------------------------------------
 ![Alt text](ClassHierarchy.PNG "Optional title")
 
-Package Structure
---------------------------------------------------------------
-
-
 Functionality provided
 --------------------------------------------------------------
 - Create an account with a unique username and password, a unique ID is provided automatically
-- Account credentials and class states are saved to an external CSV upon program exit
+- Account credentials and class states are saved to a mySQL database
+- Account credenditals are updates as required 
 - Login to an existing account and load the state of your account from previous sessions automatically
 - Each customer account is automatically loaded with a Current account
 - New accounts can be added including: Savings account, Help to buy ISA, Credit Account
 - Customers have the ability to display account information, either indivdually, or their entire portfolio
+- Customers can submit cheques to their profile to be transfered to an account of their choosing 
 - Credit Accounts have the ability to apply for new credit cards, each with their own individual traits
 - Customers can display their credit card portfolio for complete transparency 
 - Funds can be deposited to a selected accounts 
 - Funds can be withdrawn from selected accounts (Includes exception handling for withdrawing too many funds)
 - Funds can be transfered from one account to another
+- The program is mostly failsafe and will handle invalid inputs at every stage
+- Program menu has been updates to look more aesthetically pleasing to each customer
+- Latency has been simulated to give the program a real feel to it 
+- Reusable menu with print infinitely so that the program doesn't terminate at the end of a single process
 NOTE all code has been commented with a brief statement regarding it's use case in the program
 
 Scala Topics Covered
@@ -61,10 +63,5 @@ Scala Topics Covered
 
 Improvements to be made
 --------------------------------------------------------------
-- Complete the payCreditCard function inside CreditCard class
-- Currently, the program is extremely breakable. Every stage needs use validation, and can easily be broken with the incorrect input
-- User actions need to be validated for more security, currently the user can deposit however much money they want with no proof
-- Users can open multiple accounts of the same type, this should not be possible and needs to be addressed (This is also the same for credit cards)
-- Some code is very inefficient and need optimization. This makes for an underwhelming time complexity for most tasks
-- Account saving is fairly buggy and needs optimization (Multiple same name accounts can be created, unused accounts are not deleted from the CSV when reinstansiated, etc)
-- Classes and bunched together inside the same .scala script, they need to be seperated out for more readability
+- SQL table has to be made manually 
+- Users cannot transfer between eachother
