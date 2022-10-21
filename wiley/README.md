@@ -205,9 +205,10 @@ Package
 
 Regex 
 ------------------------------
-- This package contains an
+- This package contains example implementations of all the different regex casesi nside scala. Note that Digits.scala contains a link which has a table containing all the different regex cases and what they can be used for 
 
-[]()
+[Digits.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Regex/Digits.scala) - This program highlights the syntax for each for each of the regex use cases. These have been taken directly off the tutorialspoint website and print with a short explanation on why that particular regex has returned what it did. 
+[Regex.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Regex/Regex.scala) - First program executed when practicing regex in training. This program covers functions such as replaceAll, replaceFirst, findFirstIn, findAllIn, findAllMatchIn. Note that these mostly cover strings. Digits.scala covers everything and is a better representation of the idea of regex.
 
 ScalaLogging
 ------------------------------
@@ -254,10 +255,22 @@ breakTesting
 
 Collections
 ------------------------------
-- This package contains an
+- The collections package contains alot of different subpackages. Each of which are covered in the same structure. Firstly we highlight their syntax. Then we start to explore their manipulation mechansims: How can we add to them, what do they do, how can we remove elements from them, how can we iterate them and what are they useful for. The collections covered are as follows
+- Lists
+- Maps
+- Queues
+- Sequences
+- Sets
+  1. Hashsets
+  2. bitSets
+  3. listSets
+  4. sortedSets
+  5. Union and Intersection with sets
+- Stacks
+- Vectors
+- Ranges
 
-[]()
-[]()
+Multiple programs have been written for each collection as a way of praciticing their implementation as much as possible. Note that readers should pay attention to the useful comments contained within each program highliting things that cannot be seen from the outside of the syntax.
 
 controlStructures
 ------------------------------
