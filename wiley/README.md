@@ -7,7 +7,7 @@ AbstractClasses
 - It can only be instantiated by inheriting with a normal class and then defining the methods yourself
 - It's good to use when you don't know all the functionality of the class you are making. You can implement the parts you do know, and leave the parts you don't     bodiless, ready for those who do know, to fill out the functionality for you in extended classes
 
-AbstractClass.scala - Creates an Animal abstract class with abstract method Run() and normal method die(). It then extends the abstract class into subclass Dog and defines the body of the abstract method run(). Concludes by creating a new Dog object and calling the overriden abstract method. 
+[AbstractClass.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/AbstractClasses/AbstractClass.scala) - Creates an Animal abstract class with abstract method Run() and normal method die(). It then extends the abstract class into subclass Dog and defines the body of the abstract method run(). Concludes by creating a new Dog object and calling the overriden abstract method. 
 
 AbstractClassPractice.scala - Creates an Human abstract class with two abstract methods (Run and showAttributes). Similar to the previous abstract class implementation, it then extends this class adn overrides the abstract methods. This implementation contains inherited attributes as well as methods. 
 
@@ -64,3 +64,34 @@ DefaultConstructors.scala - A class with parameters that are predefined in the c
 ParameterizedConstructors.scala - A class with 2 parameters, not default. These need to be defined with instantiating a new object otherwise the program will thrown an exception 
 SecondaryConstructor.scala - Also referred to auxiliary constructors. By defining a this() method, we can redefine how many parameters the class is willing to accept when instantiated. This is done on two occasions in this program to show that the class can be instantiated with 2, 3 or 4 parameters passed to it.
 ThisKeyword - An extension of SecondaryConstructor.scala. Complimentary works with an auxiliary constructor with more comments.
+
+CustomClasses
+-----------------------
+- This package contains an example of a custom class implementation 
+- This package was purely for practice purposes in the early stages of OOP training
+
+CustomClasses.scala - Custom class parameterized by name and id attributes with 3 internal class methods. The idea here is that we have a classroom map, with each student having a name and ID. We can instantiate new CustomClass objects, and pass them to the class room map using their attributes. We also implement this functionality using user inputs.
+
+Dates 
+-----------------------
+- This package contains example implementation for date manipulation using both Java.util and Joda.time
+- Java.util is easier to use and doesn't require any dependencies, however it does not display smaller time figures such as seconds. The biggest flaw is that when   defining a date, the year must be calculated by minusing 1900. 
+- Joda.time requires the maven dependency however is very versatile and inclusive. You can define any time figures down to the milisecond. 
+
+Dates.scala - Two date implementations, one with Java.util, the other with Joda.time. We also define a custom data in each case and print to the console. 
+
+Enumeration 
+-----------------------
+- This package contains example implementations of enumeration 
+- An enumeration is a set of values with named constants 
+- They offer an easy way to work with these named, related constants 
+- They are good for reducing errors, increasing readability, and changing values in the future
+
+EnumerationPractice.scala - Defines a planet enumeration contains all the planets as named constants. The program passes them to an isPlanet that tests whether they are part of the enumeration 
+
+DifferentEnumerationCase.scala - Defines a different donut enumeration with donut types as named constants. The program implements a for loop demonstrating how to test each constant using pattern matching. In this case, only Glazed or Vanilla donuts will print to the console properly.
+
+Exceptions 
+-----------------------
+
+
