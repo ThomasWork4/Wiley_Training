@@ -167,3 +167,179 @@ List
 - This package contains an example implementation of the list collection
 
 [BasicLists.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/List/BasicLists.scala) - Demonstrates the syntax of a simple list and how to iterate them. 
+
+MultiDimensionalArrays 
+------------------------------
+- This package contains an implementation of multi dimensional arrays and how they can be manipulated
+
+[AdditionOFMDArrays.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/AdditionOfMDArrays.scala) - This program creates two multidimensional arrays and adds them together essentially using matrix addition. 
+[MultiDimensionalArrays.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/MultiDimensionalArrays.scala) - This program shows multiple syntaxes for creating multidimensional arrays. It also demonstrates how to iterate and partition them as required.
+[StringInterpolation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/MultiDimensionalArrays/StringInterpolation.scala) - This program shows  a very brief example of how to format a string using the different formatting options. 
+
+ObjectOrientation 
+------------------------------
+- This package contains the first programs written as part of the OOP part of training regarding the syntax of classes and how they are used.
+
+[StudentClass.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/ObjectOrientation/StudentClass.scala) - This program demonstrates a student simple student class with multiple attributes and methods. We demonstrate in the main thread how to instantiate classes and call class methods. 
+[StudentClassContinuation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/ObjectOrientation/StudentClassContinuation.scala) - This program is a continuation of the previous class experimenting with the basic concept of object orientation. 
+
+Operators 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Options 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Package
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Random 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Regex 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+ScalaBreak
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+ScalaLogging
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+SingletonAndCompanion
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Stream 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+SyllabusInPractice 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Testing
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Threads
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+TypeHierarchy 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+breakTesting 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Collections
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+controlStructures
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+fieldOveriding
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+mixTraits
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+patternMatching
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+Tuples 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+stringManipulation 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+traits 
+------------------------------
+- This package contains an
+
+[]()
+[]()
+
+variables 
+------------------------------
+- This package contains an
+
+[]()
+[]()
