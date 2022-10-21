@@ -224,31 +224,21 @@ SingletonAndCompanion
 
 Stream 
 ------------------------------
-- This package contains an
+- This package contains an implementation of the immutable stream object and it's use cases. 
 
-[]()
-[]()
-
-SyllabusInPractice 
-------------------------------
-- This package contains an
-
-[]()
-[]()
-
-Testing
-------------------------------
-- This package contains an
-
-[]()
-[]()
+[streams.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Stream/Streams.scala) - This program demonstrates the syntax for streams as well as how they can be manipulated. Streams are lazy. They only invoke elements of the list that you need. Stream.empty is used to signify where the end of the stream is. This program explores the use of the map, filter, head, sum, max functions in combination with scala streams.
 
 Threads
 ------------------------------
-- This package contains an
+- This package contains many different implementations for the thread mechanism. Threads are flows of execution inside Scala at runtime. A program with multiple threads, can be running multiple different processes at the same time. 
 
-[]()
-[]()
+[DateTheadUsingSleep.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/DateThreadUsingSleep.scala) - This program demonstrates the syntax of a thread, how to declare it, and how to sleep it for a certain amount of time. 
+[FirstThreadClass.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/FirstThreadClass.scala) - This program is an example of how we can instantiate multiple threads at the same time and run start them all working in parallel. 
+[Implicit.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/Implicit.scala) - This program demonstrates implicits variables which are variables that can be used as a default value for functions that accept implicit integers when no parameter has been passed at Calltime.
+[MoreThreadPractice.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/MoreThreadPractice.scala) - This program explores the setPriority functions and how they can affect the way in which a threat executes. Note that the higher the value passed to the function, the higher the priority the thread has. 
+[Synchronized.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/Synchronized.scala) = This program explores the sychronized keyword with regards to threads.
+[ThreadJoinExample.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/ThreadJoinExample.scala) - This program explores the join keywork with threads. Join stops a thread from executing until the current one is finished executing. In this particular example join completely changes the way the threads print to the console, they wait for eachother, one after another. 
+[ThreadUtility.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Threads/ThreadUtility.scala) - This program explores the use of daemon threads which are low-priority threads that run in the background of scala to perform tasks such as garbage collection. 
 
 TypeHierarchy 
 ------------------------------
