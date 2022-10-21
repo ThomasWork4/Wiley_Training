@@ -60,9 +60,9 @@ Constructors
 - Constructors are called with a new object is instantiated, they are responsible for setting a new objects attributes 
 - There are multiple ways of implementing a class constructor (Default, parameterized, secondary) 
 
-[DefaultConstructors.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Constructors/DefaultConstructor.scala)- A class with parameters that are predefined in the case that the user does not set them himself
-[ParameterizedConstructors.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Constructors/ParameterizedConstructor.scala)- A class with 2 parameters, not default. These need to be defined with instantiating a new object otherwise the program will thrown an exception 
-[SecondaryConstructor.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Constructors/SecondaryConstructor.scala) - Also referred to auxiliary constructors. By defining a this() method, we can redefine how many parameters the class is willing to accept when instantiated. This is done on two occasions in this program to show that the class can be instantiated with 2, 3 or 4 parameters passed to it.
+[DefaultConstructors.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Constructors/DefaultConstructor.scala)- A class with parameters that are predefined in the case that the user does not set them himself<br />
+[ParameterizedConstructors.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Constructors/ParameterizedConstructor.scala)- A class with 2 parameters, not default. These need to be defined with instantiating a new object otherwise the program will thrown an exception<br />
+[SecondaryConstructor.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Constructors/SecondaryConstructor.scala) - Also referred to auxiliary constructors. By defining a this() method, we can redefine how many parameters the class is willing to accept when instantiated. This is done on two occasions in this program to show that the class can be instantiated with 2, 3 or 4 parameters passed to it.<br />
 [ThisKeyword](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Constructors/ThisKeyword.scala) - An extension of SecondaryConstructor.scala. Complimentary works with an auxiliary constructor with more comments.
 
 CustomClasses
@@ -87,7 +87,7 @@ Enumeration
 - They offer an easy way to work with these named, related constants 
 - They are good for reducing errors, increasing readability, and changing values in the future
 
-[EnumerationPractice.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Enumeration/EnumerationPractice.scala) - Defines a planet enumeration contains all the planets as named constants. The program passes them to an isPlanet that tests whether they are part of the enumeration 
+[EnumerationPractice.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Enumeration/EnumerationPractice.scala) - Defines a planet enumeration contains all the planets as named constants. The program passes them to an isPlanet that tests whether they are part of the enumeration <br />
 
 [DifferentEnumerationCase.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Enumeration/DifferentEnumerationCase.scala) - Defines a different donut enumeration with donut types as named constants. The program implements a for loop demonstrating how to test each constant using pattern matching. In this case, only Glazed or Vanilla donuts will print to the console properly.
 
@@ -98,18 +98,18 @@ Exceptions
 - Checked exceptions are triggered at compile time 
 - Unchecked exception are triggered at runtime
 
-[CreaingExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/CreatingExceptions.scala) - Custom exception for validating an integer is greater than 18. If not, the custom exception will be thrown, handled and printed to the console. 
-[MoreCustomExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreCustomExceptions.scala) - Another custom exception to validate whether the user has enough funds to purchase an item as well as a custom exception to check whether an input value is a digit or not. 
-[MoreHandling.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreHandling.scala) - An example of the try catch block in combination with throwing exceptions. In this example, we are trying to access the 10th index of an array of size 2. 
-[MoreThrows.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreThrows.scala) - Another implementation of the try catch block in combination with implicitly throwing an exception under certain circumstances
-[ThrowingExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/ThrowingExceptions.scala) - First program made in this package showing the syntax for throwing an exception implicitly
-[TryCatchFinally.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/TryCatchFinally.scala) - An implemention of the try catch finally mechanism. The logic here is the same as MoreHandling.scala 
+[CreaingExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/CreatingExceptions.scala) - Custom exception for validating an integer is greater than 18. If not, the custom exception will be thrown, handled and printed to the console. <br />
+[MoreCustomExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreCustomExceptions.scala) - Another custom exception to validate whether the user has enough funds to purchase an item as well as a custom exception to check whether an input value is a digit or not. <br />
+[MoreHandling.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreHandling.scala) - An example of the try catch block in combination with throwing exceptions. In this example, we are trying to access the 10th index of an array of size 2. <br />
+[MoreThrows.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/MoreThrows.scala) - Another implementation of the try catch block in combination with implicitly throwing an exception under certain circumstances<br />
+[ThrowingExceptions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/ThrowingExceptions.scala) - First program made in this package showing the syntax for throwing an exception implicitly<br />
+[TryCatchFinally.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Exceptions/TryCatchFinally.scala) - An implemention of the try catch finally mechanism. The logic here is the same as MoreHandling.scala <br />
 
 FileManipulation
 --------------------------
 - This package contains example implementations of reading and writing to a text file
 
-[ReadingFromFile.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/FileManipulation/ReadingFromFile.scala) - Reads from a text file and prints the result in array for seperated by commas.
+[ReadingFromFile.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/FileManipulation/ReadingFromFile.scala) - Reads from a text file and prints the result in array for seperated by commas.<br />
 [WritingToFile.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/FileManipulation/WritingToFile.scala) - Writes multiple lines to a text file
 
 Functions 
@@ -117,8 +117,8 @@ Functions
 - This package contains example implementations of functions in Scala 
 - Given that Scala is massively functionally driven, these program were the cornerstone to my early understanding of the langauge
 
-[DefaultValueFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/DefaultValueFunctions.scala) - Displays the syntax for writing a function with default values in the case where no parameters are passed at calltime. 
-[Recursion.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/Recursion.scala) - Recursive function (function that calls itself). This recursive function can be used to find the factorial of a number. 
+[DefaultValueFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/DefaultValueFunctions.scala) - Displays the syntax for writing a function with default values in the case where no parameters are passed at calltime.<br /> 
+[Recursion.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/Recursion.scala) - Recursive function (function that calls itself). This recursive function can be used to find the factorial of a number. <br />
 [ScalaFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Functions/ScalaFunctions.scala) - One of the first programs written in training designed to demonstrate the syntax of a regular function
 
 
@@ -126,13 +126,13 @@ Higher Order Functions
 ------------------------------
 - This package contains example implementations of the different higher order functions 
 
-[AnonymousFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/AnonymousFunctions.scala) - Implementation of anonymous functions where functions are essentially written as variables. This program defines an addition AF. It implemented in different ways with varied datatypes. 
-[Composition.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/Composition.scala) - Implementation of composition where functions are stacked and executed on after an other dependent on the order of the stack.
-[CuryingFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/CuryingFunctions.scala) - Implementation of currying which is essentially the process of converting a function with multiple arguments into a sequence of functions that take a single argument.
-[HigherOrderFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/HigherOrderFunctions.scala) - Implementations of functions that accept other functions as a parameter input. 
-[MultiLineExpressions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/MultiLineExpressions.scala) - Implementation of multi line expressions where the last return clause is executed instead of the first because code is interpreted by the JVM from top to bottom.
-[NestedFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/NestedFunctions.scala) - Implementation of nested functions where functions are called inside another function
-[SupplementaryObject.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/SupplementaryObject.scala) - This can be ignored, this was merely a supplentary object for other programs to call upon should they need it. 
+[AnonymousFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/AnonymousFunctions.scala) - Implementation of anonymous functions where functions are essentially written as variables. This program defines an addition AF. It implemented in different ways with varied datatypes. <br />
+[Composition.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/Composition.scala) - Implementation of composition where functions are stacked and executed on after an other dependent on the order of the stack.<br />
+[CuryingFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/CuryingFunctions.scala) - Implementation of currying which is essentially the process of converting a function with multiple arguments into a sequence of functions that take a single argument.<br />
+[HigherOrderFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/HigherOrderFunctions.scala) - Implementations of functions that accept other functions as a parameter input. <br />
+[MultiLineExpressions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/MultiLineExpressions.scala) - Implementation of multi line expressions where the last return clause is executed instead of the first because code is interpreted by the JVM from top to bottom.<br />
+[NestedFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/NestedFunctions.scala) - Implementation of nested functions where functions are called inside another function<br />
+[SupplementaryObject.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/SupplementaryObject.scala) - This can be ignored, this was merely a supplentary object for other programs to call upon should they need it. <br />
 [VariableLengthParameters.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/VariableLengthParameters.scala) - Implementation of functions that can accept varialbe length parameters using key symbols like * or collections of data.
 
 Inheritance
@@ -140,8 +140,8 @@ Inheritance
 - This package contains example implementations of the different inheritance instances
 - There are 4 different types of inheritance (Single, Multiple, Multilevel and Hierarchical)
 
-[BankTask.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/BankTask.scala) - Class that implements an example of hierarchical inheritance. In this case, multiple banks are inheriting the base interest rate from the parent Central bank class. 
-[Inheritance.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/Inheritance.scala) - Class that implementes regular inheritance. In this case, class Amphibian extends the parent class Animal and inherits all it's attributes and methods. 
+[BankTask.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/BankTask.scala) - Class that implements an example of hierarchical inheritance. In this case, multiple banks are inheriting the base interest rate from the parent Central bank class. <br />
+[Inheritance.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/Inheritance.scala) - Class that implementes regular inheritance. In this case, class Amphibian extends the parent class Animal and inherits all it's attributes and methods. <br />
 [Multilevelinheritance.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/MultilevelInheritance.scala) - Class that implements multilevel inheritance. In this case child class Mammal extends parent class SuperAnimal and grandchilds class mammoth extends child class mammal. 
 
 LabWork
