@@ -185,59 +185,42 @@ ObjectOrientation
 
 Operators 
 ------------------------------
-- This package contains an
+- This package contains an implementation for each of the differnent operators in Scala
 
-[]()
-[]()
+[Operators.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Operators/Operators.scala) - This program demonstrates the syntax for each of the different operators (==, &&, ||). 
 
 Options 
 ------------------------------
-- This package contains an
+- This package contains implementations for the Option container in scala and what it's different use cases are.
 
-[]()
-[]()
+[Example.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Options/Example.scala) - Fairly complex progfram that accesses a map and attempts to retrieve from the option container returned. Corresponding messages are provided to the user regarding whether the option is empty or not. 
+[Student.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Options/Student.scala) - Similar to Example.scala, follows a map implementation an attempts to retrieve from the map and execute pattern matching cases based on the contents of each option. 
 
 Package
 ------------------------------
-- This package contains an
+- This package contains examples of how to import from other packages contained inside your intellij project
 
-[]()
-[]()
-
-Random 
-------------------------------
-- This package contains an
-
-[]()
-[]()
+[PackageTrial.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Package/PackageTrial.scala) - This program demonstrates the syntax for importing from an alternative class or object and executing whatever is provided inside.
+[PracticePackage.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Package/PracticePackage.scala) - A continuation of PackageTrial.scala with a different example.
 
 Regex 
 ------------------------------
 - This package contains an
 
 []()
-[]()
-
-ScalaBreak
-------------------------------
-- This package contains an
-
-[]()
-[]()
 
 ScalaLogging
 ------------------------------
-- This package contains an
+- This package contains an implementation of the lazy logging import. 
 
-[]()
-[]()
+[Logging.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/ScalaLogging/Logging.scala) - This program demonstrates the syntax for logging a particular message instead of printing to the console. 
 
 SingletonAndCompanion
 ------------------------------
-- This package contains an
+- This package contains an implementation of the companion object as well as the singelton object
 
-[]()
-[]()
+[CompanionObject.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/SingletonAndCompanion/CompanionObject.scala) - This program demonstrates the syntax for the companion object. It is an object declared in the same file as a class and has the same name as the class. Companion objects typically don't have a reference. 
+[Singleton.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/SingletonAndCompanion/Singleton.scala) - This program demonstrates the syntax for the singleton object. Singleton object is an object that is declared by an object instead of a class. It's also used to expose some globally accessible functions or methods. Singleton objects are instantiated only once therefore its state IS SAVED and it's attributes are never re-initialized
 
 Stream 
 ------------------------------
@@ -269,17 +252,15 @@ Threads
 
 TypeHierarchy 
 ------------------------------
-- This package contains an
+- This package explains the different type heirarchies in Scala given that they differ to most other programming languages
 
-[]()
-[]()
+[TypeHierarchy.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/TypeHierarchy/TypeHierarchy.scala) - This program demonstrates the syntax for Any, AnyVal, AnyRef and explores what they represent in regards to their usability.
 
 breakTesting 
 ------------------------------
-- This package contains an
+- This package contains implementations for the break clause and how it is used in Scala
 
-[]()
-[]()
+[testBreak](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/breakTesting/testBreak.scala) - This program demonstrates the syntax of the break clause and how it can be used to break out of control structures. Note that breakable must be used with break otherwise a break exception with stop the flow of execution in Scala.
 
 Collections
 ------------------------------
@@ -290,56 +271,63 @@ Collections
 
 controlStructures
 ------------------------------
-- This package contains an
+- This package contains implementations for the different types of control structures inside Scala
 
-[]()
-[]()
+[ControlStructures.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/ControlStructures.scala) - This program demonstrates the syntax for if statements and how they can be used in Scala.
+[ForLoops.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/ForLoops.scala) - This program demonstrates the syntax for for loops and how they can be used to control collections of data. Most of these examples cover ranges, however this is expanded upon in other packages.
+[LoopsContinuous.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/LoopsContinuous.scala) - This program explores the usability of infinite loops, although this is not often implemented without a termimation criteria. 
+[WhileLoops.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/controlStructures/WhileLoops.scala) - This program demostrates the syntax for while loop and how they are fairly similar to for loops but only stop when a particular criteria is met.
 
 fieldOveriding
 ------------------------------
-- This package contains an
+- This package contains an implementation of field overriding. This is essentially overriding parents attributes inside a child class.
 
-[]()
-[]()
+[fieldOverriding](https://github.com/ThomasWork4/Wiley_Training/tree/master/wiley/fieldOverriding) - This program demonstrates the syntax of the override keyword with regards to changing parent attributes inside a child class. Note that the attributes must be declared as val for this to be possible. 
+
+mapFunction
+------------------------------
+- This package contains an implementation of method overriding which is also referred to as runtime polymorphism 
+
+[mapFunction.scala](https://github.com/ThomasWork4/Wiley_Training/tree/master/wiley/mapFunction) - This program demonstrates the use cases for the map function. The map function is great for performing transformations on collections of data. It's less computationally expensive then a for loop.  
+
 
 mixTraits
 ------------------------------
-- This package contains an
+- This package contains an implementation of mix traits that can be mixed with abstract classes using the with keyword
 
-[]()
-[]()
+[mixTraits.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/MixTypes.scala) - This program demonstrats the use cases of mixing traits with abstract classes when being inherited. 
+[mixTraitsPractice.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/PatternMatching.scala) - This program is a continuation of mixTraits.scala. 
+
 
 patternMatching
 ------------------------------
-- This package contains an
+- This package contains example implementations for the pattern matching mechanism 
 
-[]()
-[]()
+[MixTypes.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/MixTypes.scala) - This program demonstrates the pattern matching syntax and how it can be used as an alternative to if statements.
+[PatternMatching.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/patternMatching/PatternMatching.scala) - This program is a continuation of MixTypes.scala. 
 
 Tuples 
 ------------------------------
-- This package contains an
+- This package contains an implementation of the Tuple collection and how it's unique use cases
 
-[]()
-[]()
+[Tuples.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/scalacohort/Tuples/Tuples.scala) - This program highlights the syntax for a scala Tuple, as well as how to index them for individual elements. Tuples are great for storing multiple datatypes inside a single collection, however they can sometimes be fairly one-dimensional and don't have alot of other usages.
 
 stringManipulation 
 ------------------------------
-- This package contains an
+- This package contains the different implementations for manipulating strings in Scala. 
 
-[]()
-[]()
+[compareTo.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/compareTo.scala) - This program demonstrates the usability of the compareTo function. A further description of how this function is contained within the documentation of the program. 
+[stringFunctions.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/stringFunctions.scala) - This program highlights the substring and concatenation functions, each of which with their own advantages for indexing strings and transforming them.
+[stringManipulation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/stringManipulation/stringManipulation.scala) - This program highlights the difference between == and .equals(). Furthermore it discusses the computational differences between using the plus symbol to concatenate strings, and the concatentation function itself.
 
 traits 
 ------------------------------
-- This package contains an
+- This package contains an implementation of the traits mechanism. This is similar to java interfaces.
 
-[]()
-[]()
+[traits.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/traits/traits.scala) - This program demonstrates the syntax and usages of traits. Traits are bodyless classes with abstract methods. They have no functionality whatsoever. They act purely as a skeleton for other subclasses to extend from. In this particular script, we define a Human trait with multiple abstract methods, as well as a Man child class that extends the train and overrides each of it's possible functionalities. NOTE, multiple inheritance is possible using traits in Scala.
 
 variables 
 ------------------------------
-- This package contains an
+- This package contains the first program made as part of the scala training.
 
-[]()
-[]()
+[Variables.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/variables/Variables.scala) - This program demonstrates the syntax of a regular variable
