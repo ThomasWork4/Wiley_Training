@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.funSuite
 
 import com.wiley.collections.Stacks.Stacks
 import org.scalatest.BeforeAndAfter

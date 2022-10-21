@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.funSpec
 
 import org.scalatest.funspec.AnyFunSpec
 

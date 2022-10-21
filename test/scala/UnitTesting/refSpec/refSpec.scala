@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.refSpec
 
 import org.scalatest.refspec.RefSpec
 

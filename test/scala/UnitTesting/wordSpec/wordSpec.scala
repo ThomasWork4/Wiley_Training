@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.wordSpec
 
 import org.scalatest.wordspec.AnyWordSpec
 

@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.Tagging
 
 import org.scalatest.Tag
 import org.scalatest.flatspec.AnyFlatSpec

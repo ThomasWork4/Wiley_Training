@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.funSuite
 
 import org.scalatest.funsuite.AnyFunSuite
 

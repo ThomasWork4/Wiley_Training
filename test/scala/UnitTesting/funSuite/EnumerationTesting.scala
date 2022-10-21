@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.funSuite
 
 import com.wiley.Enumeration.EnumerationPractice.isPlanet
 import org.scalatest.funsuite.AnyFunSuite

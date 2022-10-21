@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.funSuite
 
 import com.wiley.Dates.Dates.{d2, dt}
 import org.joda.time.DateTime

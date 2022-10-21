@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.funSuite
 
 import com.wiley.Package.PracticePackage
 import org.scalatest.funsuite.AnyFunSuite

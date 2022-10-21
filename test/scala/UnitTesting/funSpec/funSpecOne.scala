@@ -1,7 +1,7 @@
-package UnitTesting
+package UnitTesting.funSpec
 
-import org.scalatest.funsuite.AnyFunSuite
 import com.wiley.ObjectOrientation.StudentClass
+import org.scalatest.funsuite.AnyFunSuite
 class funSpecOne extends AnyFunSuite{
   var testObj = new StudentClass()
   testObj.setName("Jinesh")

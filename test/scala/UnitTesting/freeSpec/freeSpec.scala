@@ -1,4 +1,4 @@
-package UnitTesting
+package UnitTesting.freeSpec
 
 import org.scalatest.freespec.AnyFreeSpec
 
