@@ -1,12 +1,11 @@
-package ProjectTesting.funSuite
+package ProjectUnitTesting
 
 import BankingProjectV2.Accounts.SavingsAccount
 import BankingProjectV2.CreditCard.CreditCard
+import BankingProjectV2.Exceptions.{ExistingAccountException, NotEnoughFundsException, TooManyAccountExceptions}
 import BankingProjectV2.Profile.Profile
-import BankingProjectV2.{CreditCard, Profile}
-import org.scalatest.funsuite.AnyFunSuite
 import BankingProjectV2.SQL_Account_Storage.DoesAccountExist
-import BankingProjectV2.Exceptions.{TooManyAccountExceptions,NotEnoughFundsException,ExistingAccountException}
+import org.scalatest.funsuite.AnyFunSuite
 class projectUnitTest extends AnyFunSuite{
   var testCustomer = new Profile("HelloHello")
 
