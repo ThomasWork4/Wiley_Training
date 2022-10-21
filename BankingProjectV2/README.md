@@ -18,8 +18,9 @@ Simplified Class Hierarchy
 --------------------------------------------------------------
 ![Alt text](ClassHierarchy.PNG "Optional title")
 
-Project Structure
+Package Structure
 --------------------------------------------------------------
+
 
 Functionality provided
 --------------------------------------------------------------
