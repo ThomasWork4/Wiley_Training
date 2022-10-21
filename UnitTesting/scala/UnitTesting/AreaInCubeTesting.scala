@@ -1,3 +1,5 @@
+package UnitTesting
+
 import com.wiley.Testing.Testing
 import org.scalatest.funsuite.AnyFunSuite
 

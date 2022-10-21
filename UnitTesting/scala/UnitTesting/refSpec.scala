@@ -1,3 +1,5 @@
+package UnitTesting
+
 import org.scalatest.refspec.RefSpec
 
 class refSpec extends RefSpec{

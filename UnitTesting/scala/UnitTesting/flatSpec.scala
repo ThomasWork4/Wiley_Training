@@ -1,8 +1,10 @@
+package UnitTesting
+
 import org.scalatest.flatspec.AnyFlatSpec
 
 class flatSpec extends AnyFlatSpec {
 
-  //flatSpec presents another way of defining unit tests.
+  //UnitTesting.flatSpec presents another way of defining unit tests.
   //Either you can create a test using "" should "" in {}
   //OR
   //it should "" in {}

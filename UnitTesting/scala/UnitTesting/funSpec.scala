@@ -1,3 +1,5 @@
+package UnitTesting
+
 import org.scalatest.funspec.AnyFunSpec
 
 class funSpec extends AnyFunSpec {

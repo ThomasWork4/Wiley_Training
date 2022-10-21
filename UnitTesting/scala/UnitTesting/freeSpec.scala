@@ -1,3 +1,5 @@
+package UnitTesting
+
 import org.scalatest.freespec.AnyFreeSpec
 
 class freeSpec extends AnyFreeSpec{

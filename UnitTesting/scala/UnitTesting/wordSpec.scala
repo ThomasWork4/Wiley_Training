@@ -1,3 +1,5 @@
+package UnitTesting
+
 import org.scalatest.wordspec.AnyWordSpec
 
 class wordSpec extends AnyWordSpec{

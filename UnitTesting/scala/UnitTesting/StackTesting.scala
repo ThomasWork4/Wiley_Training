@@ -1,3 +1,5 @@
+package UnitTesting
+
 import com.wiley.collections.Stacks.Stacks
 import org.scalatest.BeforeAndAfter
 import org.scalatest.funsuite.AnyFunSuite

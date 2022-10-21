@@ -1,3 +1,5 @@
+package UnitTesting
+
 import org.scalatest.funsuite.AnyFunSuite
 
 import scala.collection.mutable.ListBuffer

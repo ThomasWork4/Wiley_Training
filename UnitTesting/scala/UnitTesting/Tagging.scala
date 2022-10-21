@@ -1,6 +1,7 @@
+package UnitTesting
+
 import org.scalatest.Tag
 import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.tagobjects.Slow
 import org.scalatest.tagobjects.Slow
 
 object Super extends Tag("test")

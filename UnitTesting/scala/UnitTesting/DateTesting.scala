@@ -1,7 +1,8 @@
-import org.scalatest.funsuite.AnyFunSuite
-import com.wiley.Dates
-import com.wiley.Dates.Dates.{d2, dt, dt2}
+package UnitTesting
+
+import com.wiley.Dates.Dates.{d2, dt}
 import org.joda.time.DateTime
+import org.scalatest.funsuite.AnyFunSuite
 
 class DateTesting extends AnyFunSuite {
 

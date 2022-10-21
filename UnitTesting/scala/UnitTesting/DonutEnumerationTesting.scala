@@ -1,3 +1,5 @@
+package UnitTesting
+
 import com.wiley.Enumeration.DifferentEnumerationCase.Donut
 import org.scalatest.funsuite.AnyFunSuite
 

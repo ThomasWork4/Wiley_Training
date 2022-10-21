@@ -1,4 +1,4 @@
-package customFunSpecTesting
+package UnitTesting
 
 import org.scalatest.funsuite.AnyFunSuite
 import com.wiley.ObjectOrientation.StudentClass

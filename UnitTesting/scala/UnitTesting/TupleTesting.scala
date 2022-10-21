@@ -1,3 +1,5 @@
+package UnitTesting
+
 import com.wiley.scalacohort.Tuples.Tuples.{tuple, tuple3}
 import org.scalatest.funsuite.AnyFunSuite
 

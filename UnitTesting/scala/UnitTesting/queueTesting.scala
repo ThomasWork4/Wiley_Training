@@ -1,3 +1,5 @@
+package UnitTesting
+
 import com.wiley.collections.Queues.Queues.returnFirstElement
 import org.scalatest.funsuite.AnyFunSuite
 
