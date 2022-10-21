@@ -47,3 +47,20 @@ AnonymousObjects.scala - Defines a class AnonymousObject that contains the metho
 
 CaseClass
 -----------------------
+- This package contains an example implemenetation of Case classes
+- Case classes are great for modelling immutable data
+- They also work really well with pattern matching 
+- By default, all constructor parameters for case classes are public and immutable
+
+CaseClass.scala - Defines a trait (Java interface) from which we extend 3 case classes. We also define a method that contains a pattern matching mechanism for printing the attributes of each object once instantiated. Each of the 3 case classes are passed to this method, and the output printed to the console. 
+
+Constructors 
+-----------------------
+- This package contains an example implementation of all the different constructor mechanisms in Scala
+- Constructors are called with a new object is instantiated, they are responsible for setting a new objects attributes 
+- There are multiple ways of implementing a class constructor (Default, parameterized, secondary) 
+
+DefaultConstructors.scala - A class with parameters that are predefined in the case that the user does not set them himself
+ParameterizedConstructors.scala - A class with 2 parameters, not default. These need to be defined with instantiating a new object otherwise the program will thrown an exception 
+SecondaryConstructor.scala - Also referred to auxiliary constructors. By defining a this() method, we can redefine how many parameters the class is willing to accept when instantiated. This is done on two occasions in this program to show that the class can be instantiated with 2, 3 or 4 parameters passed to it.
+ThisKeyword - An extension of SecondaryConstructor.scala. Complimentary works with an auxiliary constructor with more comments.
