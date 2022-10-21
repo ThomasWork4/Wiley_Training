@@ -135,3 +135,35 @@ Higher Order Functions
 [SupplementaryObject.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/SupplementaryObject.scala) - This can be ignored, this was merely a supplentary object for other programs to call upon should they need it. 
 [VariableLengthParameters.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/HigherOrderFunctions/VariableLengthParameters.scala) - Implementation of functions that can accept varialbe length parameters using key symbols like * or collections of data.
 
+Inheritance
+------------------------------
+- This package contains example implementations of the different inheritance instances
+- There are 4 different types of inheritance (Single, Multiple, Multilevel and Hierarchical)
+
+[BankTask.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/BankTask.scala) - Class that implements an example of hierarchical inheritance. In this case, multiple banks are inheriting the base interest rate from the parent Central bank class. 
+[Inheritance.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/Inheritance.scala) - Class that implementes regular inheritance. In this case, class Amphibian extends the parent class Animal and inherits all it's attributes and methods. 
+[Multilevelinheritance.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/Inheritance/MultilevelInheritance.scala) - Class that implements multilevel inheritance. In this case child class Mammal extends parent class SuperAnimal and grandchilds class mammoth extends child class mammal. 
+
+LabWork
+------------------------------
+- This package all mini-assignments given during training as part of the Wiley Edge slides, or Leetcode tasks that needed to be completed in our own time. 
+
+LazyEvalutation
+------------------------------
+- This package contains an example implementation of the lazy keyword 
+- Lazy evaluation is also referred to as "Call-by-need" 
+
+[LazyEvaluation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/LazyEvaluation/LazyEvaluation.scala) - This program demonstrates the usability of the lazy keyword and that it's only used by the program when it is explicity, otherwise will do nothing. 
+
+LazyEvalutation
+------------------------------
+- This package contains an example implementation of the lazy keyword 
+- Lazy evaluation is also referred to as "Call-by-need" 
+
+[LazyEvaluation.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/LazyEvaluation/LazyEvaluation.scala) - This program demonstrates the usability of the lazy keyword and that it's only used by the program when it is explicity, otherwise will do nothing. 
+
+List 
+------------------------------
+- This package contains an example implementation of the list collection
+
+[BasicLists.scala](https://github.com/ThomasWork4/Wiley_Training/blob/master/wiley/List/BasicLists.scala) - Demonstrates the syntax of a simple list and how to iterate them. 
